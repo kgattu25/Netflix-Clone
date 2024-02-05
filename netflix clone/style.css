@@ -1,0 +1,220 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(movie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+  }
+.logo img{
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    image-resolution: from-image 300dpi;
+    filter: brightness(2);
+    filter: contrast(1.75);
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    margin-top: 1%;
+    padding: 40px 70px;
+}
+nav button{
+    padding: 10px 30px;
+    margin-left: 15px;
+    font-size: 15px;
+    background-color: #db0001;
+    border-radius: 5px;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.langbtn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 8px;
+}
+button img{
+    width: 15px;
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.mtext h1{
+    padding-top: 5%;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70px;
+    max-width: 650px;
+}
+.mtext h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.emailsignup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.emailsignup input{
+    flex: 1;
+    outline: 0;
+    border: 0;
+    margin-left: 10px;
+}
+.emailsignup button{
+    background: #db0001;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    background: black;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+hr{
+    width: 100%;
+    border: transparent;
+    height: 5px;
+    background-color: rgb(56, 53, 53);
+}
+.faq{
+    padding: 10px 5%;
+    text-align: center;
+    background-color: black;
+}
+.faq h2{
+    font-size: 50px;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 800px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .emailsignup{
+    max-width: 600px;
+    margin: 20px auto 60px;  
+}
+.faq small{
+    font-size: 15px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #303030;
+    color: #777;
+    background: black;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .langbtn{
+    color: #777;
+    font-weight: 550;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.copright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
